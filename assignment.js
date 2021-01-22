@@ -1,11 +1,14 @@
 //Kilometer TO Meter
 function kilometerToMeter(km){
     var meter = km * 1000;
+    if (km<1) {
+        return "Enter a Valid Number";
+    }
     return meter;
 }
-var result = kilometerToMeter();
 
-//Budget Calculator
+
+// Budget Calculator
 function budgetCalculator(watch, phone, laptop) {
     var watchPrice = 50;
     var phonePrice = 100;
@@ -16,9 +19,10 @@ function budgetCalculator(watch, phone, laptop) {
     var laptopCost = laptopPrice * laptop;
 
     var totalCost = watchCost + phoneCost + laptopCost;
+
     return totalCost;
 }
-var result = budgetCalculator(1, 1, 1);
+
 
 //Hotel Cost
 function hotelCost(days) {
@@ -46,7 +50,7 @@ function hotelCost(days) {
 
     return cost;
 }
-var result = hotelCost();
+
 
 //Mega Friend
 function megaFriend(friends){
@@ -62,5 +66,3 @@ function megaFriend(friends){
 
     return megaName;
 }
-var result = megaFriend(["Rafi","kadir"]);
-console.log(result);
